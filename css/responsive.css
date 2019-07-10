@@ -1,0 +1,270 @@
+/*.................................Responsive StyleSheet.............................*/
+
+/*..........Nav 1 Section Responsive..........*/
+@media screen and (min-width: 768px) and (max-width: 992px){
+        header.first_header_menu>.nav_1>.ul_menu{
+            padding: 10px 0px;
+    }
+    header.first_header_menu>.nav_1>.ul_menu>.list_item{
+            text-align: center;
+           float: none!important;
+           display: block;
+           padding: 5px;
+    }
+    }
+    @media screen and (max-width: 768px){
+        header.first_header_menu>.nav_1>.ul_menu>.list_item{
+            display: none;
+    }
+    }
+                /*..........Nav 2 Section Responsive.........*/
+    @media screen and (max-width: 992px){
+        header.second_header_menu>.nav_2>.ul_menu2{
+            width: auto;
+            height: auto;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-flow: column wrap;
+                    flex-flow: column wrap;
+            position: absolute;
+            top: 83px;
+            left: 0px;
+            display: none;
+    }
+    header.second_header_menu>.nav_2>.check_bar{
+           display: block;
+           position: absolute;
+           top: 0px;
+           right: 0px;
+           -webkit-transform: scale(4.3);
+               -ms-transform: scale(4.3);
+                   transform: scale(4.3);
+           margin: 0px;
+           margin-right: 25px;
+           padding: 0px;
+           margin-top: 30px;
+           cursor: pointer;
+           z-index: 100;
+           opacity: 0;
+    }
+    header.second_header_menu>.nav_2>.check_stike{
+            display: block;
+           background: black;
+           width: 30px;
+           height: 3px;
+           right: calc(0% - -19px);
+           pointer-events: none;
+           position: absolute;
+           -webkit-transition: .1s ease-out all;
+           -o-transition: .1s ease-out all;
+           transition: .1s ease-out all;
+    }
+    header.second_header_menu>.nav_2>.check_stike:nth-of-type(1){
+            top: calc(0% - -23px);
+    }
+    header.second_header_menu>.nav_2>.check_stike:nth-of-type(2){
+            top: calc(0% - -33px);
+    }
+    header.second_header_menu>.nav_2>.check_stike:nth-of-type(3){
+            top: calc(0% - -43px);
+    }
+    header.second_header_menu>.nav_2> .check_bar[type="checkbox"]:checked ~  .check_stike:nth-of-type(1){
+           -webkit-transform: rotate(45deg);
+               -ms-transform: rotate(45deg);
+                   transform: rotate(45deg);
+          -webkit-transform-origin: left;
+              -ms-transform-origin: left;
+                  transform-origin: left;
+          background:tan;
+    }
+    header.second_header_menu>.nav_2>.check_bar[type="checkbox"]:checked ~  .check_stike:nth-of-type(2){
+            opacity: 0;
+           -webkit-transform: translateX(-20px);
+               -ms-transform: translateX(-20px);
+                   transform: translateX(-20px);
+    }
+    header.second_header_menu>.nav_2>.check_bar[type="checkbox"]:checked ~ .check_stike:nth-of-type(3){
+            -webkit-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+           -webkit-transform-origin: left;
+               -ms-transform-origin: left;
+                   transform-origin: left;
+           background: tan;
+    }
+    header.second_header_menu>.nav_2 .check_bar[type="checkbox"]:checked ~ .ul_menu2{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-flow: column ;
+                    flex-flow: column ;
+            width: 200px;
+           -webkit-animation: drop_nav .5s ease-out;
+                   animation: drop_nav .5s ease-out;
+           background: -webkit-linear-gradient( 13deg,yellow ,  #f1f1f1 10%);
+           background: -o-linear-gradient( 13deg,yellow ,  #f1f1f1 10%);
+           background: linear-gradient( 77deg,yellow ,  #f1f1f1 10%);
+    }
+    @-webkit-keyframes drop_nav{
+            0%{
+                -webkit-transform: translateX(-300px);
+                        transform: translateX(-300px);
+       }
+        100%{
+                -webkit-transform: translateX(0px);
+                        transform: translateX(0px)
+       }
+    }
+    @keyframes drop_nav{
+            0%{
+                -webkit-transform: translateX(-300px);
+                        transform: translateX(-300px);
+       }
+        100%{
+                -webkit-transform: translateX(0px);
+                        transform: translateX(0px)
+       }
+    }
+    header.second_header_menu>.nav_2 
+    .check_bar[type="checkbox"]:checked ~ .ul_menu2>
+    .list_item2 .nav_dropdown_menu{
+            top: 30%;
+           left: 20%;
+    }
+    .ul_menu2>.list_item2 .nav_dropdown_menu{
+            -webkit-transform: scale(0,0);
+                -ms-transform: scale(0,0);
+                    transform: scale(0,0);
+            -webkit-transform-origin: top left;
+                -ms-transform-origin: top left;
+                    transform-origin: top left;
+    }
+    .ul_menu2>.list_item2:hover .nav_dropdown_menu{
+            -webkit-transform: scale(1,1);
+                -ms-transform: scale(1,1);
+                    transform: scale(1,1);
+    }
+    .ul_menu2>.list_item2>.nav_dropdown_menu{
+            border: .5px solid blue;
+    }
+    
+    }
+    @media screen and (max-width: 576px){
+        header.second_header_menu>.nav_2 .check_bar[type="checkbox"]:checked ~ .ul_menu2{
+                width: 200px;
+}
+}
+    /*..............................Carousel Control Responsive...............*/
+    @media screen and (max-width: 576px){
+    .control_carousel>
+    .carousel_link_wrapper{
+      position: absolute;
+      bottom: 0%;
+      left: 76%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      width: 100%;
+    }
+    .sec_carousel_item .caro_txt{
+        top: 40%;
+    }
+    }
+    /*...................................Sec Dream Section Responsive...................*/
+    @media screen and (max-width: 768px){
+            .sec_dream{
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                        -ms-flex-flow: column;
+                            flex-flow: column;
+            }
+            .sec_dream_item{
+                    width: 100%!important;
+            }
+    }
+    /*..................................Sec Kids Edu Responsive.........................*/
+    @media screen and (max-width: 768px){
+    .sec_kids_edu>
+    .kids_edu_txt{
+            top: 30%;
+            left: 30%;
+            width: 70%;
+            margin: 0px auto;
+            -webkit-transform: translate(-15%, -5%);
+                -ms-transform: translate(-15%, -5%);
+                    transform: translate(-15%, -5%);
+    }
+    }
+    /*................................Sec Class Section Gallery Responsive.................*/
+    /*................................Sec Teacher Section Responsive.....................*/
+    @media screen and (max-width: 400px){
+            .sec_class_gallery>
+    .sec_class_gallery_item{
+            width: 300px!important;
+    }
+    .sec_teacher_about_item{
+            width: 300px;
+            -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 10%, 100% 80%, 92% 100%, 8% 100%, 0% 80%, 0 9%);
+                    clip-path: polygon(20% 0%, 80% 0%, 100% 10%, 100% 80%, 92% 100%, 8% 100%, 0% 80%, 0 9%);
+            margin: 5px;
+    }
+    }
+    /*............................Sec Testimonial Section Responsive......................*/
+    @media screen and (max-width: 768px){
+            .sec_testimonial_say{
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
+                            flex-direction: column;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+            }
+            .sec_testimonial_say>
+            .sec_testimonial_say_item:nth-of-type(1)::after{
+                     display: none;
+                }
+    }
+    @media screen and (max-width: 576px){
+            .sec_testimonial_say>
+    .sec_testimonial_say_item:nth-of-type(2){
+            width: 80%;
+    }
+    }
+    /*..........................Footer Section Responsive...............................*/
+    @media screen and (max-width: 768px){
+            
+            footer>.footer_item{
+                    width: 100%;
+            }
+            .last_footer_menu>.footer_menu_item{
+                    text-align: center;
+            }
+            .last_footer_menu>.footer_menu_item:last-of-type{
+                    display: block;
+                    float: none!important;
+                    width: 100%!important;
+                    margin: 0px!important;
+                    
+            }
+            .last_footer_menu>.footer_menu_item>.footer_social_icon{
+                    margin: auto;
+            }
+    
+    }
+    @media screen and (max-width: 576px){
+            footer{
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                        -ms-flex-flow: column wrap;
+                            flex-flow: column wrap;
+            }
+            .first_footer_menu>.footer_item{
+                    width: 100%;
+            }
+    }
